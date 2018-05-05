@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="18dp">
+
+        <ImageView
+            android:id="@+id/ivFoto"
+            tools:src="@drawable/mortalkombat"
+            android:layout_width="96dp"
+            android:layout_height="100dp" />
+
+        <LinearLayout
+            android:layout_toRightOf="@+id/ivFoto"
+            android:layout_toLeftOf="@+id/ivDelete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvTitulo"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:gravity="center|left"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="@string/titulo_mortal_kombat"/>
+            <TextView
+                android:id="@+id/tvLancamento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#AAA"
+                tools:text="@string/lancamento_mortal_kombat"/>
+            <TextView
+                android:id="@+id/tvDescricao"
+                android:maxLines="3"
+                android:ellipsize="end"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="@string/descricao_mortal_kombat"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:id="@+id/ivDelete"
+            android:layout_centerVertical="true"
+            android:src="@drawable/delete"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
